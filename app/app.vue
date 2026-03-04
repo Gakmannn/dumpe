@@ -12,26 +12,26 @@
       <p class="te1">Промышленное оборудование</p>
       <p class="te2">Автоматизация и роботизация</p>
     </div>
-    <div class="text">
+    <div>
       <h2>О компании DAMPE</h2>
       <p>DAMPE — инжиниринговое предприятие, которое помогает промышленным предприятиям выйти на новый уровень эффективности. Мы специализируемся на поставках современного промышленного оборудования и внедрении комплексных автоматизированных и роботизированных решений — в том числе для сварочных процессов.</p>
       <h2>Оборудование</h2>
     </div>
     <div class="grid center">
-      <NuxtImg class="img1" fit="cover" src="/img/ABBRobotWelding.webp" />
-      <NuxtImg class="img2" fit="cover" src="/img/Froniusautomatization.webp" />
-      <NuxtImg class="img3" fit="cover" src="/img/Fronius.webp" />
-      <p class="t1">Роботизация сварки</p>
-      <p class="t2">Автоматизация сварки</p>
-      <p class="t3">Сварочное оборудование</p>
-      <NuxtImg class="img4" fit="cover" src="/img/IPSEN.webp" />
+      <NuxtImg class="img1" fit="cover" src="/img/Fronius.webp" />
       <NuxtImg class="img5" fit="cover" src="/img/Messer.webp" />
-      <NuxtImg class="img6" fit="cover" src="/img/Table.webp" />
-      <p class="t4">Печи для ХТО</p>
+      <NuxtImg class="img3" fit="cover" src="/img/IPSEN.webp" />
+      <p class="t1">Сварочное оборудование</p>
       <p class="t5">Станки термической резки</p>
+      <p class="t3">Печи для ХТО</p>
+      <NuxtImg class="img4" fit="cover" src="/img/ABBRobotWelding.webp" />
+      <NuxtImg class="img2" fit="cover" src="/img/Froniusautomatization.webp" />
+      <NuxtImg class="img6" fit="cover" src="/img/Table.webp" />
+      <p class="t4">Роботизация сварки</p>
+      <p class="t2">Автоматизация сварки</p>
       <p class="t6">Сварочные столы и оснастка</p>
     </div>
-    <div class="text">
+    <div>
       <h2>Наша миссия</h2>
       <p>Мы стремимся помогать предприятиям:</p>
       <ul>
@@ -40,7 +40,7 @@
         <li>обеспечивать стабильно высокое качество продукции;</li>
         <li>внедрять передовые технологии для укрепления конкурентных позиций на рынке.</li>
       </ul>
-      <h2>Что мы предлагаем</h2>
+      <h2>Компетенции</h2>
       <p>DAMPE реализует полный цикл услуг «под ключ» — от подбора оборудования до запуска интегрированных систем в эксплуатацию. В спектр наших компетенций входят:</p>
       <ol>
         <li>
@@ -140,6 +140,8 @@ header p, footer p {
 }
 .center img, .top img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .text {
   max-width: 800px;
