@@ -1,7 +1,15 @@
 <template>
   <header>
-    <div class="container">
-      <h1>DAMPE</h1>
+    <div id="main" class="container">
+      <div class="flex jssb">
+        <h1>DAMPE</h1>
+        <div class="flex" style="gap:10px">
+          <a href="#main">Главная</a>
+          <a href="#about">О компании</a>
+          <a href="#equipment">Оборудование</a>
+          <a href="#competencies">Компетенции</a>
+        </div>
+      </div>
       <p>промышленное оборудование и автоматизация</p>
     </div>
   </header>
@@ -13,9 +21,9 @@
       <p class="te2">Автоматизация и роботизация</p>
     </div>
     <div>
-      <h2>О компании DAMPE</h2>
+      <h2 id="about">О компании</h2>
       <p>DAMPE — инжиниринговое предприятие, которое помогает промышленным предприятиям выйти на новый уровень эффективности. Мы специализируемся на поставках современного промышленного оборудования и внедрении комплексных автоматизированных и роботизированных решений — в том числе для сварочных процессов.</p>
-      <h2>Оборудование</h2>
+      <h2 id="equipment">Оборудование</h2>
     </div>
     <div class="grid center">
       <NuxtImg class="img1" fit="cover" src="/img/Fronius.webp" />
@@ -40,7 +48,7 @@
         <li>обеспечивать стабильно высокое качество продукции;</li>
         <li>внедрять передовые технологии для укрепления конкурентных позиций на рынке.</li>
       </ul>
-      <h2>Компетенции</h2>
+      <h2 id="competencies">Компетенции</h2>
       <p>DAMPE реализует полный цикл услуг «под ключ» — от подбора оборудования до запуска интегрированных систем в эксплуатацию. В спектр наших компетенций входят:</p>
       <ol>
         <li>
@@ -99,6 +107,9 @@
 </template>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -161,6 +172,9 @@ header p, footer p {
 a, a:visited {
   color: rgb(177, 2, 2);
 }
+h2 {
+  margin-top: 80px;
+}
 @media screen and (max-width: 1200px) {
   .container {
     padding: 10px;
@@ -208,6 +222,10 @@ a, a:visited {
   }
 }
 @media screen and (max-width: 600px) {
+  .center p,
+  .top p {
+    font-size: 20px;
+  }
   .top {
     grid-template-columns: 100%;
   }
@@ -267,6 +285,10 @@ a, a:visited {
 @media screen and (max-width: 550px) {
   ol, ul {
     padding-left: 20px;
+  }
+  header p,
+  footer p {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 500px) {
