@@ -143,6 +143,11 @@ header p, footer p {
   height: 100%;
   object-fit: cover;
 }
+.center p,
+.top p {
+  font-size: 26px;
+  margin: 10px 0;
+}
 .text {
   max-width: 800px;
   margin: 0 auto;
