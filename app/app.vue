@@ -4,10 +4,10 @@
       <div class="flex jssb">
         <h1>DAMPE</h1>
         <div class="flex" style="gap:10px">
-          <a href="#main">Главная</a>
-          <a href="#about">О компании</a>
-          <a href="#equipment">Оборудование</a>
-          <a href="#competencies">Компетенции</a>
+          <a href="/#main">Главная</a>
+          <a href="/#about">О компании</a>
+          <a href="/#equipment">Оборудование</a>
+          <a href="/#competencies">Компетенции</a>
         </div>
       </div>
       <p>промышленное оборудование и автоматизация</p>
@@ -26,15 +26,15 @@
       <h2 id="equipment">Оборудование</h2>
     </div>
     <div class="grid center">
-      <NuxtImg class="img1" fit="cover" src="/img/Fronius.webp" />
-      <NuxtImg class="img5" fit="cover" src="/img/Messer.webp" />
-      <NuxtImg class="img3" fit="cover" src="/img/IPSEN.webp" />
+      <NuxtImg class="img1" src="/img/Fronius.webp" />
+      <NuxtImg class="img5" src="/img/Messer.webp" />
+      <NuxtImg class="img3" src="/img/IPSEN.webp" />
       <p class="t1">Сварочное оборудование</p>
       <p class="t5">Станки термической резки</p>
       <p class="t3">Печи для ХТО</p>
-      <NuxtImg class="img4" fit="cover" src="/img/ABBRobotWelding.webp" />
-      <NuxtImg class="img2" fit="cover" src="/img/Froniusautomatization.webp" />
-      <NuxtImg class="img6" fit="cover" src="/img/Table.webp" />
+      <NuxtImg class="img4" style="object-fit: cover;" src="/img/ABBRobotWelding.webp" />
+      <NuxtImg class="img2" style="object-fit: cover;" src="/img/Froniusautomatization.webp" />
+      <NuxtImg class="img6" src="/img/Table.webp" />
       <p class="t4">Роботизация сварки</p>
       <p class="t2">Автоматизация сварки</p>
       <p class="t6">Сварочные столы и оснастка</p>
@@ -121,10 +121,13 @@ header, footer {
 }
 header {
   color: rgb(177, 2, 2);
+  position: sticky;
+  top: 0;
+  padding: 0 0 10px 0;
 }
 h1 {
   font-size: 60px;
-  margin: 10px 0;
+  margin: 0px 0;
 }
 header p, footer p {
   font-size: 25px;
@@ -144,20 +147,21 @@ header p, footer p {
   gap: 10px;
 }
 .center {
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 30% 30% 30%;
   align-items: center;
   justify-items: center;
-  gap: 10px;
+  column-gap: 50px;
+  row-gap: 10px;
 }
 .center img, .top img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .center p,
 .top p {
   font-size: 26px;
-  margin: 10px 0;
+  margin: 4px 0 10px 0;
 }
 .text {
   max-width: 800px;
@@ -283,6 +287,9 @@ h2 {
   }
 }
 @media screen and (max-width: 550px) {
+  h1 {
+    font-size: 40px;
+  }
   ol, ul {
     padding-left: 20px;
   }
