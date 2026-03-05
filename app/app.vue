@@ -45,19 +45,19 @@
         <p>Сварочное оборудование</p>
       </div>
       <div class="img5">
-        <NuxtImg src="/img/Messer.webp" />
+        <NuxtImg style="object-fit: contain;" src="/img/Messer.webp" />
         <div class="filter"></div>
         <p>Станки термической резки</p>
       </div>
       <div class="img3">
-        <NuxtImg src="/img/IPSEN.webp" />
+        <NuxtImg style="object-fit: contain;" src="/img/IPSEN.webp" />
         <div class="filter"></div>
         <p>Печи для ХТО</p>
       </div>
       <div class="img4">
         <NuxtImg src="/img/ABBRobotWelding.webp" />
         <div class="filter"></div>
-        <p>Роботизация сварки</p>
+        <p>Роботизация</p>
       </div>
       <div class="img2">
         <NuxtImg src="/img/Froniusautomatization.webp" />
@@ -99,6 +99,7 @@ body {
   padding: 0;
   font-size: 20px;
   font-family: Open Sans;
+  font-weight: 400, 700;
 }
 header, footer {
  padding: 0px;
@@ -185,11 +186,11 @@ header p, footer p {
   color: #999999;
 }
 .center {
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 31% 31% 31%;
   align-items: center;
   justify-items: center;
-  column-gap: 50px;
-  row-gap: 10px;
+  column-gap: 40px;
+  row-gap: 40px;
 }
 .center>div {
   position: relative;
@@ -202,6 +203,11 @@ header p, footer p {
   right: 0;
   bottom: 0;
   left: 0;
+  transition: .5s;
+}
+.filter:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: .5s;
 }
 .center div p {
   position: absolute;
@@ -211,13 +217,13 @@ header p, footer p {
   font-weight: 700;
   text-transform: uppercase;
   color: white;
+  font-size: 18px;
 }
 .center img, .top img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.center p,
 .top p {
   font-size: 16px;
   margin: 16px 0;

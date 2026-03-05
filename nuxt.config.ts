@@ -40,4 +40,14 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxt/fonts', '@nuxt/image'],
+  fonts: {
+    defaults: {
+      weights: [400, 700],
+      styles: ['normal'],
+      subsets: [
+        'cyrillic-ext',
+        'cyrillic',
+      ]
+    },
+  }
 })
