@@ -1,106 +1,90 @@
 <template>
   <header>
     <div id="main" class="container">
-      <div class="flex jssb">
-        <h1>DAMPE</h1>
-        <div class="flex" style="gap:10px">
-          <a href="/#main">Главная</a>
+      <div class="flex jcsb">
+        <img width="180" src="/img/logo.webp" />
+        <div class="flex" style="gap:40px">
           <a href="/#about">О компании</a>
           <a href="/#equipment">Оборудование</a>
-          <a href="/#competencies">Компетенции</a>
+          <a href="/#contacts">Контакты</a>
         </div>
       </div>
-      <p>промышленное оборудование и автоматизация</p>
     </div>
   </header>
   <main class="container">
     <div style="margin-top: 20px;" class="grid top">
-      <NuxtImg class="i1" fit="cover" src="/img/Table.webp" />
-      <NuxtImg class="i2" fit="cover" src="/img/robot-myths.webp" />
-      <p class="te1">Промышленное оборудование</p>
-      <p class="te2">Автоматизация и роботизация</p>
+      <NuxtImg class="i1" fit="cover" src="/img/robot-myths.webp" />
+      <NuxtImg class="i2" fit="cover" src="/img/Table.webp" />
+      <div class="te1">
+        <p class="main">Инжиниринг и автоматизация</p>
+        <p class="grey">Комплексные решение по автоматизации производств</p>
+      </div>
+      <div class="tt2">
+        <p class="main">Промышленное оборудование</p>
+        <p class="grey">Поставка промышленного оборудования</p>
+      </div>
     </div>
-    <div>
+    <div class="text">
       <h2 id="about">О компании</h2>
-      <p>DAMPE — инжиниринговое предприятие, которое помогает промышленным предприятиям выйти на новый уровень эффективности. Мы специализируемся на поставках современного промышленного оборудования и внедрении комплексных автоматизированных и роботизированных решений — в том числе для сварочных процессов.</p>
-      <h2 id="equipment">Оборудование</h2>
-    </div>
-    <div class="grid center">
-      <NuxtImg class="img1" src="/img/Fronius.webp" />
-      <NuxtImg class="img5" src="/img/Messer.webp" />
-      <NuxtImg class="img3" src="/img/IPSEN.webp" />
-      <p class="t1">Сварочное оборудование</p>
-      <p class="t5">Станки термической резки</p>
-      <p class="t3">Печи для ХТО</p>
-      <NuxtImg class="img4" style="object-fit: cover;" src="/img/ABBRobotWelding.webp" />
-      <NuxtImg class="img2" style="object-fit: cover;" src="/img/Froniusautomatization.webp" />
-      <NuxtImg class="img6" src="/img/Table.webp" />
-      <p class="t4">Роботизация сварки</p>
-      <p class="t2">Автоматизация сварки</p>
-      <p class="t6">Сварочные столы и оснастка</p>
-    </div>
-    <div>
-      <h2>Наша миссия</h2>
-      <p>Мы стремимся помогать предприятиям:</p>
-      <ul>
-        <li>повышать производительность;</li>
-        <li>сокращать производственные издержки;</li>
-        <li>обеспечивать стабильно высокое качество продукции;</li>
-        <li>внедрять передовые технологии для укрепления конкурентных позиций на рынке.</li>
-      </ul>
-      <h2 id="competencies">Компетенции</h2>
-      <p>DAMPE реализует полный цикл услуг «под ключ» — от подбора оборудования до запуска интегрированных систем в эксплуатацию. В спектр наших компетенций входят:</p>
-      <ol>
-        <li>
-          <h3>Поставка промышленного оборудования:</h3>
-          <ul>
-            <li>сварочные источники;</li>
-            <li>сварочные столы и оснастка;</li>
-            <li>станки для резки металла;</li>
-            <li>печи для химико-термической обработки (ХТО);</li>
-            <li>оборудование для автоматизации сварочных процессов и др.</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Разработка и интеграция автоматизированных и роботизированных комплексов по сварке, включая:</h3>
-          <ul>
-            <li>проектирование технологических линий с учётом специфики производства заказчика;</li>
-            <li>подбор промышленных роботов и сварочного оборудования;</li>
-            <li>создание систем управления и контроля качества сварных соединений;</li>
-            <li>внедрение систем машинного зрения и датчиков для мониторинга процесса сварки.</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Комплексная модернизация производств:</h3>
-          <ul>
-            <li>автоматизация отдельных участков;</li>
-            <li>создание полностью роботизированных сварочных линий;</li>
-            <li>интеграция новых решений в существующие производственные цепочки.</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Сервисное обслуживание и поддержка:</h3>
-          <ul>
-            <li>пусконаладочные работы;</li>
-            <li>обучение персонала работе с новым оборудованием;</li>
-            <li>гарантийное и постгарантийное обслуживание;</li>
-            <li>техническая поддержка и консультации.</li>
-          </ul>
-        </li>
-      </ol>
-      <p>Выбирая DAMPE, вы получаете надёжного технологического партнёра, который поможет оптимизировать производство, внедрить современные роботизированные и автоматизированные решения и добиться устойчивого роста эффективности вашего бизнеса.
+      <p class="h1">DAMPE</p>
+      <p>Компания DAMPE — инжиниринговое предприятие, которое специализируется на поставках современного промышленного оборудования и внедрении комплексных автоматизированных и роботизированных решений.</p>
+      <p>
+        Наша миссия — помогать предприятиям повышать эффективность производства, сокращать издержки и обеспечивать стабильное качество продукции за счет внедрения передовых технологий.
       </p>
+      <p>
+        Мы предлагаем полный цикл услуг: от подбора и поставки оборудования до разработки и интеграции автоматизированных систем "под ключ". Благодаря опыту нашей команды инженеров и партнерству с ведущими мировыми производителями, мы реализуем проекты любой сложности — от модернизации отдельных участков до создания полностью роботизированных производственных линий.
+      </p>
+      <p>
+        Мы ценим долгосрочные отношения и всегда стремимся быть надежным технологическим партнером для наших клиентов, обеспечивая высокий уровень сервиса, гибкий подход и гарантированный результат.</p>
+      <!-- <h2 id="equipment">Оборудование</h2> -->
+    </div>
+    <div class="grid center" id="equipment">
+      <div class="img1">
+        <NuxtImg src="/img/Fronius.webp" />
+        <div class="filter"></div>
+        <p>Сварочное оборудование</p>
+      </div>
+      <div class="img5">
+        <NuxtImg src="/img/Messer.webp" />
+        <div class="filter"></div>
+        <p>Станки термической резки</p>
+      </div>
+      <div class="img3">
+        <NuxtImg src="/img/IPSEN.webp" />
+        <div class="filter"></div>
+        <p>Печи для ХТО</p>
+      </div>
+      <div class="img4">
+        <NuxtImg src="/img/ABBRobotWelding.webp" />
+        <div class="filter"></div>
+        <p>Роботизация сварки</p>
+      </div>
+      <div class="img2">
+        <NuxtImg src="/img/Froniusautomatization.webp" />
+        <div class="filter"></div>
+        <p>Автоматизация сварки</p>
+      </div>
+      <div class="img6">
+        <NuxtImg src="/img/Table.webp" />
+        <div class="filter"></div>
+        <p>Сварочные столы</p>
+      </div>
     </div>
   </main>
-  <footer>
+  <footer id="contacts">
     <div class="container">
-      <div class="flex">
-        <p>email:
-          <a href="mailto:info@dampe.ru">info@dampe.ru</a>
-        </p>
-        <p>телефон:
-          <a href="tel:+7(915)1069423">+7 (915) 106-94-23</a>
-        </p>
+      <div class="flex jcse">
+        <a href="mailto:info@dampe.ru">
+          <img src="/img/mail.png" alt="написать">
+          <span class="upper">email</span>
+          <span>info@dampe.ru</span>
+        </a>
+        <div class="line"></div>
+        <a href="tel:+7(915)1069423">
+          <img src="/img/call.png" alt="позвонить">
+          <span class="upper">телефон</span>
+          <span>+7 (915) 106-94-23</span>
+        </a>
       </div>
     </div>
   </footer>
@@ -114,28 +98,74 @@ body {
   margin: 0;
   padding: 0;
   font-size: 20px;
+  font-family: Open Sans;
 }
 header, footer {
- background-color: #F4F4F3;
- padding: 20px;
+ padding: 0px;
 }
 header {
-  color: rgb(177, 2, 2);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid #999999;
   position: sticky;
   top: 0;
-  padding: 0 0 10px 0;
+  padding: 0;
+  z-index: 100;
 }
-h1 {
-  font-size: 60px;
+header a {
+  color: #999999;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+header a:visited {
+  color: #999999;
+}
+header a:hover {
+  color: #2a3780;
+}
+h2 {
+  padding-top: 80px;
+  font-size: 16px;
   margin: 0px 0;
+  color: #2a3780;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.h1 {
+  font-size: 36px;
+  margin: 0px 0;
+  font-weight: 700;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+.h1::after {
+  border: #999999 solid 0;
+  border-top-width: 10px;
+  content: "";
+  display: block;
+  height:10px; 
+  margin-top: 30px;
+  margin-right: auto;
+  width: 70px;
+}
+.text {
+  font-size: 14px;
+}
+.text p {
+  margin-bottom: 30px;
 }
 header p, footer p {
   font-size: 25px;
   margin: 10px 0;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1140px;
+  padding: 15px;
   margin: 0 auto;
+}
+#equipment {
+  padding-top: 80px;
 }
 .grid {
   display: grid;
@@ -144,7 +174,15 @@ header p, footer p {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
-  gap: 10px;
+  column-gap: 50px;
+  row-gap: 10px;
+}
+.top .main {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.top .grey {
+  color: #999999;
 }
 .center {
   grid-template-columns: 30% 30% 30%;
@@ -153,31 +191,70 @@ header p, footer p {
   column-gap: 50px;
   row-gap: 10px;
 }
+.center>div {
+  position: relative;
+  height: 100%;
+}
+.filter {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.center div p {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
 .center img, .top img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .center p,
 .top p {
-  font-size: 26px;
-  margin: 4px 0 10px 0;
-}
-.text {
-  max-width: 800px;
-  margin: 0 auto;
+  font-size: 16px;
+  margin: 16px 0;
+  text-align: center;
 }
 .flex {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-a, a:visited {
-  color: rgb(177, 2, 2);
+.jcsb {
+  justify-content: space-between;
 }
-h2 {
-  margin-top: 80px;
+.jcse {
+  justify-content: space-evenly;
+}
+.line {
+  height: 70px;
+  border-right: 2px solid #2a3780;
+}
+footer {
+  padding-top: 80px;
+}
+footer img {
+  width: 50px;
+}
+footer a {
+  display: flex;
+  gap:10px;
+  flex-direction: column;
+  text-decoration: none;
+  color: #2a3780;
+  font-size: 17px;
+  align-items: center;
+}
+.upper {
+  text-transform: uppercase;
 }
 @media screen and (max-width: 1200px) {
   .container {
