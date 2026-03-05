@@ -2,8 +2,8 @@
   <header>
     <div id="main" class="container">
       <div class="flex jcsb">
-        <a href="/#main">
-          <img width="180" src="/img/logo.webp" />
+        <a href="/#main" aria-label="logo">
+          <img width="180" src="/img/logo.webp" alt="logo" />
         </a>
         <div class="flex" style="gap:40px">
           <a href="/#about">О компании</a>
