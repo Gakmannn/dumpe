@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/dumpe/', // Must start and end with a slash
     head: {
+      htmlAttrs: {
+        lang: 'ru', // Set the default language here (e.g., 'en', 'es', 'fr')
+      },
       title: 'Промышленное оборудование и автоматизация', // Default page title
       meta: [
         { charset: 'utf-8' },

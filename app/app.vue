@@ -2,7 +2,9 @@
   <header>
     <div id="main" class="container">
       <div class="flex jcsb">
-        <img width="180" src="/img/logo.webp" />
+        <a href="/#main">
+          <img width="180" src="/img/logo.webp" />
+        </a>
         <div class="flex" style="gap:40px">
           <a href="/#about">О компании</a>
           <a href="/#equipment">Оборудование</a>
@@ -11,10 +13,10 @@
       </div>
     </div>
   </header>
-  <main class="container">
+  <main id="main" class="container">
     <div style="margin-top: 20px;" class="grid top">
-      <NuxtImg class="i1" fit="cover" src="/img/robot-myths.webp" />
-      <NuxtImg class="i2" fit="cover" src="/img/Table.webp" />
+      <NuxtImg class="i1" fit="cover" src="/img/robot-myths.webp" alt="Инжиниринг и автоматизация" />
+      <NuxtImg class="i2" fit="cover" src="/img/Table.webp" alt="Промышленное оборудование" />
       <div class="te1">
         <p class="main">Инжиниринг и автоматизация</p>
         <p class="grey">Комплексные решение по автоматизации производств</p>
@@ -40,32 +42,32 @@
     </div>
     <div class="grid center" id="equipment">
       <div class="img1">
-        <NuxtImg src="/img/Fronius.webp" />
+        <NuxtImg src="/img/Fronius.webp" alt="Сварочное оборудование" />
         <div class="filter"></div>
         <p>Сварочное оборудование</p>
       </div>
       <div class="img5">
-        <NuxtImg style="object-fit: contain;" src="/img/Messer.webp" />
+        <NuxtImg style="object-fit: contain;" src="/img/Messer.webp" alt="Станки термической резки" />
         <div class="filter"></div>
         <p>Станки термической резки</p>
       </div>
       <div class="img3">
-        <NuxtImg style="object-fit: contain;" src="/img/IPSEN.webp" />
+        <NuxtImg style="object-fit: contain;" src="/img/IPSEN.webp" alt="Печи для ХТО" />
         <div class="filter"></div>
         <p>Печи для ХТО</p>
       </div>
       <div class="img4">
-        <NuxtImg src="/img/ABBRobotWelding.webp" />
+        <NuxtImg src="/img/ABBRobotWelding.webp" alt="Роботизация" />
         <div class="filter"></div>
         <p>Роботизация</p>
       </div>
       <div class="img2">
-        <NuxtImg src="/img/Froniusautomatization.webp" />
+        <NuxtImg src="/img/Froniusautomatization.webp" alt="Автоматизация сварки" />
         <div class="filter"></div>
         <p>Автоматизация сварки</p>
       </div>
       <div class="img6">
-        <NuxtImg src="/img/Table.webp" />
+        <NuxtImg src="/img/Table.webp" alt="Сварочные столы" />
         <div class="filter"></div>
         <p>Сварочные столы</p>
       </div>
@@ -99,7 +101,6 @@ body {
   padding: 0;
   font-size: 20px;
   font-family: Open Sans;
-  font-weight: 400, 700;
 }
 header, footer {
  padding: 0px;
@@ -198,7 +199,7 @@ header p, footer p {
 }
 .filter {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   top: 0;
   right: 0;
   bottom: 0;
